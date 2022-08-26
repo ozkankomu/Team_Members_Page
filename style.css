@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  background-color: rgb(78, 1, 1);
+  box-shadow: 5px 5px 10px black;
+  border-radius: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.navbar img {
+  width: 150px;
+  height: 100px;
+  border-radius: 40%;
+  box-shadow: 5px 5px 10px rgb(99, 99, 99);
+}
+
+.contact {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.contact li a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  font-size: 1rem;
+  outline: 2px solid white;
+  outline-offset: 2px;
+  border-radius: 1rem;
+  display: inline-block;
+  width: 6rem;
+  height: 3rem;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  transition: all 0.4s ease;
+}
+
+.contact li a:hover {
+  transform: scale(1.2);
+  background-color: lightgrey;
+  color: black;
+  outline-offset: 10px;
+}
+
+.contact li {
+  list-style-type: none;
+  margin: 1rem 1rem;
+}
+
+.contact ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header {
+  display: flex;
+  background-color: rgb(102, 101, 101);
+  box-shadow: 5px 5px 10px black;
+  border-radius: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.title h1 {
+  font-size: 2.2rem;
+  color: rgb(109, 2, 2);
+  text-shadow: 1px 1px 3px black;
+}
+
+.introduce {
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.introduce h3 {
+  font-size: 1.7rem;
+  font-weight: 1000;
+  color: rgb(37, 28, 93);
+  text-shadow: 1px 1px 2px black;
+}
+
+.introduce p {
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px black;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(./images/fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.photo {
+  width: 16%;
+  margin: 3rem 6rem;
+  transition: all 0.5s ease;
+}
+
+.photo:hover {
+  transform: scale(1.4);
+}
+
+.photo2,
+.photo5 {
+  padding-top: 10rem;
+}
+
+.div1 {
+  display: flex;
+  width: 100%;
+}
+
+.div1 img {
+  width: 100%;
+  border-radius: 40px;
+  box-shadow: 8px 8px 20px rgb(101, 101, 106);
+}
+
+.div1 img:hover {
+  box-shadow: 10px 10px 80px rgb(252, 16, 16);
+}
+
+.photo .name {
+  text-align: center;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  padding: 7px;
+}
+
+.photo .people {
+  padding: 7px;
+  writing-mode: tb-rl;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 800px) {
+  .photo {
+    width: 40%;
+    margin: 1rem 3rem;
+  }
+
+  .photo2,
+  .photo5 {
+    padding-top: 0rem;
+  }
+}
